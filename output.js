@@ -1,7 +1,7 @@
-//Mon Jul 22 2024 02:55:56 GMT+0000 (Coordinated Universal Time)
+//Mon Jul 22 2024 03:04:46 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-NAME = "红色火箭";
+NAME = "\u7EA2\u8272\u706B\u7BAD";
 VALY = ["hshjck"];
 CK = "";
 LOGS = 0;
@@ -12,7 +12,7 @@ class 蛋炒饭_0x3c87b9 {
     this.token = _0x8a7f2a.split("#")[0];
     this.openid = _0x8a7f2a.split("#")[1];
     this._ = ++usid;
-    _0x8a7f2a.split("#")[2] ? this.f = "小主 [" + this._ + "] " + _0x8a7f2a.split("#")[2] : this.f = "小主 [" + this._ + "] ";
+    _0x8a7f2a.split("#")[2] ? this.f = "\u5C0F\u4E3B [" + this._ + "] " + _0x8a7f2a.split("#")[2] : this.f = "\u5C0F\u4E3B [" + this._ + "] ";
     this.message = "";
     this.logs = true;
   }
@@ -22,7 +22,7 @@ class 蛋炒饭_0x3c87b9 {
         ticket: this.token
       },
       _0x16df82 = await $.task("get", "https://index.amcfortune.com/fundex-activity/point/account/getTotalPoint?key=" + _0x3b8edb, _0x52b97e);
-    _0x16df82.code == 200 ? (console.log("【" + this.f + "】登陆成功,当前总积分:" + _0x16df82.data.totalPoint), this.point = _0x16df82.data.totalPoint, this.logs = true) : this.logs = false;
+    _0x16df82.code == 200 ? (console.log("\u3010" + this.f + "\u3011\u767B\u9646\u6210\u529F,\u5F53\u524D\u603B\u79EF\u5206:" + _0x16df82.data.totalPoint), this.point = _0x16df82.data.totalPoint, this.logs = true) : this.logs = false;
   }
   async ["signinlist"]() {
     let _0x23c654 = $.time(13),
@@ -37,7 +37,7 @@ class 蛋炒饭_0x3c87b9 {
           await this.signin();
         } else {
           if (_0x107275 == _0x3ecce5.signDate && _0x3ecce5.signIn == true) {
-            console.log("【" + this.f + "】今天已经签到，不再执行签到任务");
+            console.log("\u3010" + this.f + "\u3011\u4ECA\u5929\u5DF2\u7ECF\u7B7E\u5230\uFF0C\u4E0D\u518D\u6267\u884C\u7B7E\u5230\u4EFB\u52A1");
           }
         }
       }
@@ -59,7 +59,7 @@ class 蛋炒饭_0x3c87b9 {
       },
       _0x39c068 = "{}",
       _0x443b90 = await $.task("post", "https://index.amcfortune.com/fundex-activity/point/sign/userSignIn", _0x292f85, _0x39c068);
-    _0x443b90.code == 200 && console.log("【" + this.f + "】签到成功,获得" + _0x443b90.data.point + "积分,已连续签到" + _0x443b90.data.continuousDays + "天");
+    _0x443b90.code == 200 && console.log("\u3010" + this.f + "\u3011\u7B7E\u5230\u6210\u529F,\u83B7\u5F97" + _0x443b90.data.point + "\u79EF\u5206,\u5DF2\u8FDE\u7EED\u7B7E\u5230" + _0x443b90.data.continuousDays + "\u5929");
   }
   async ["exchangelist"]() {
     let _0x5f16b0 = $.time(13),
@@ -94,7 +94,7 @@ class 蛋炒饭_0x3c87b9 {
       },
       _0x42ba9c = "{\"openId\":\"" + this.openid + "\",\"giftId\":" + _0xfa9512 + ",\"requestId\":\"\",\"submitCode\":\"\"}",
       _0xfacd18 = await $.task("post", "https://index.amcfortune.com/fundex-activity/point/exchange/doExchange", _0x7b52b2, _0x42ba9c);
-    _0xfacd18.code == 200 && (console.log("【" + this.f + "】积分兑换红包成功"), this.message += "【" + this.f + "】积分兑换红包成功,需要手动提现！！");
+    _0xfacd18.code == 200 && (console.log("\u3010" + this.f + "\u3011\u79EF\u5206\u5151\u6362\u7EA2\u5305\u6210\u529F"), this.message += "\u3010" + this.f + "\u3011\u79EF\u5206\u5151\u6362\u7EA2\u5305\u6210\u529F,\u9700\u8981\u624B\u52A8\u63D0\u73B0\uFF01\uFF01");
   }
 }
 $ = 蛋炒饭_0x4589ba();
@@ -105,7 +105,7 @@ $ = 蛋炒饭_0x4589ba();
     await $.Multithreading("login");
     let _0x4cd992 = $.cookie_list.filter(_0x4b0d93 => _0x4b0d93.logs == true);
     if (_0x4cd992.length == 0) {
-      console.log("Cookie格式错误 或 账号被禁封");
+      console.log("Cookie\u683C\u5F0F\u9519\u8BEF \u6216 \u8D26\u53F7\u88AB\u7981\u5C01");
       return;
     } else {
       await $.Multithreading("signinlist");
@@ -153,9 +153,9 @@ function 蛋炒饭_0x4589ba() {
         }
         _0x1b03f6 = $.cookie_list.length;
       } else {
-        console.log("\n【" + NAME + "】：未填写变量: " + VALY);
+        console.log("\n\u3010" + NAME + "\u3011\uFF1A\u672A\u586B\u5199\u53D8\u91CF: " + VALY);
       }
-      console.log("共找到" + _0x1b03f6 + "个账号");
+      console.log("\u5171\u627E\u5230" + _0x1b03f6 + "\u4E2A\u8D26\u53F7");
       return $.cookie_list;
     }
     ["task"](_0x25799f, _0x191eb8, _0x3d2036, _0x36e096, _0x7491eb) {
@@ -184,9 +184,9 @@ function 蛋炒饭_0x4589ba() {
           try {
             if (_0x338a01) {
               if (LOGS == 1) {
-                console.log("================ 请求 ================");
+                console.log("================ \u8BF7\u6C42 ================");
                 console.log(_0x5d9472);
-                console.log("================ 返回 ================");
+                console.log("================ \u8FD4\u56DE ================");
                 if ($.safeGet(_0x338a01)) {
                   console.log(JSON.parse(_0x338a01));
                 } else {
@@ -209,7 +209,7 @@ function 蛋炒饭_0x4589ba() {
                 }
               }
             } else {
-              _0x237524 = _0x191eb8 + "   API请求失败，请检查网络重试\n" + _0x57ad96;
+              _0x237524 = _0x191eb8 + "   API\u8BF7\u6C42\u5931\u8D25\uFF0C\u8BF7\u68C0\u67E5\u7F51\u7EDC\u91CD\u8BD5\n" + _0x57ad96;
             }
             return _0xb20018(_0x237524);
           }
