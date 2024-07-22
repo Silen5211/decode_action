@@ -1,4 +1,4 @@
-//Mon Jul 22 2024 01:30:32 GMT+0000 (Coordinated Universal Time)
+//Mon Jul 22 2024 01:52:25 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
 const $ = new Env("悦临平抽奖"),
