@@ -1,4 +1,4 @@
-//Sun Nov 24 2024 04:52:47 GMT+0000 (Coordinated Universal Time)
+//Tue Jan 07 2025 03:14:37 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
 const $ = new Env("益禾堂"),
